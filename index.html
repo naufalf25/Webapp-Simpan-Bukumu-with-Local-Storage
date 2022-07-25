@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Beranda | Simpan Bukumu</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Simpan Bukumu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="form">
+                <h2>Masukkan Daftar Buku Baru Anda <i class="fa-solid fa-plus"></i></h2>
+                <form action="#" class="form-input" id="form-input-buku">
+                    <div class="input-group">
+                        <label for="book-name">Judul Buku</label>
+                        <input type="text" name="book-title" id="book-title" placeholder="Judul Buku Anda" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="writer-name">Nama Penulis Buku</label>
+                        <input type="text" name="writer-name" id="writer-name" placeholder="Nama Penulis Buku Anda" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="year">Tahun Terbit</label>
+                        <input type="number" name="year" id="year" placeholder="Tahun Terbit Buku Anda" required>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" id="finished-submit" value="Masukkan Buku ke Rak Selesai Dibaca">
+                        <input type="submit" id="unfinished-submit" value="Masukkan Buku ke Rak Belum Selesai Dibaca">
+                    </div>
+                </form>
+            </section>
+
+            <section class="search-book">
+                <h2>Pencarian Buku <i class="fa-solid fa-magnifying-glass"></i></h2>
+                <form action="#" class="search-form">
+                    <div class="input-group">
+                        <label for="book-name">Judul Buku</label>
+                        <p class="label">Besar kecilnya huruf berpengaruh</p>
+                        <input type="text" name="book-title" id="bookTitleSearch" placeholder="Masukkan Judul Buku" required>
+                    </div>
+                    <div class="search-submit">
+                        <input type="submit" id="searchSubmit" value="Cari">
+                    </div>
+                </form>
+                <h2 class="search-result" id="resultTitle" hidden>Hasil Pencarian</h2>
+                <div id="searchResult"></div>
+            </section>
+
+            <section class="unfinished">
+                <h2>Buku Belum Selesai Dibaca <i class="fa-solid fa-book-open"></i></h2>
+                <div id="books"></div>
+            </section>
+
+            <section class="finished">
+                <h2>Buku Selesai Dibaca <i class="fa-solid fa-bookmark"></i></h2>
+                <div id="finished-books"></div>
+            </section>
+        </div>
+    </main>
+    <footer id="contact">
+        <h2>Kontak <i class="fa-solid fa-address-book"></i></h2>
+        <nav>
+            <ul>
+                <li><a href="mailto:opal.farras@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> E-mail</a></li>
+                <li><a href="https://web.facebook.com/muhammad.naufalfarras.52" target="_blank"><i class="fa-brands fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/naufal_railfans25/" target="_blank"><i class="fa-brands fa-instagram-square"></i> Instagram</a></li>
+                <li><a href="https://github.com/naufalf25" target="_blank"><i class="fa-brands fa-github-square"></i> GitHub</a></li>
+            </ul>
+        </nav>
+        <div class="copy">
+            <p>Muhammad Naufal Farras &copy; 2022</p>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/736f9082a4.js" crossorigin="anonymous"></script>
+</body>
+</html>
